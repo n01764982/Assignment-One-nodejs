@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+#home{
+  margin:0px auto;
+}
+#home h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#navbar{
+  background:whitesmoke;
+  border-bottom: solid darkgray 1px;
+}
+#navbar ul{
+  height:50px;
+  list-style: none;
+  margin:0;
+  padding:0;
+  
+}
+
+#navbar li{
+  display:inline-block;
+  padding:15px;
+  text-align: right;
+}
+
+#navbar li:hover{
+  cursor:pointer;
+  background:lightgrey;
+  height:100%;
+}
+
+#dicePage
+{
+
+}
+
+#notePage{
+  
+}
