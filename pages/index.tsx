@@ -1,5 +1,6 @@
-import Home from '@/components/homepage';
-
+import Note from "./note";
+import Home from "./home";
+import Dice from "./dice";
 
 
 function index(){
@@ -7,6 +8,7 @@ function index(){
     <>
     <Home/>
     </>
+    
 
   );
 }

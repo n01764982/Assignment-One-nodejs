@@ -1,13 +1,12 @@
-import Navbar from './navbar';
 
 
 
-function Home(){
+
+export default function Home(){
 
     return(
         <>
             <main id='home'>
-            <Navbar/>
             <body>
                 <h1>Welcome to my app</h1>
                 <p>This app will contain and calculator that can do addition, 
@@ -21,4 +20,3 @@ function Home(){
     );
 }
 
-export default Home;

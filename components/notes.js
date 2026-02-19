@@ -1,9 +1,4 @@
 import { useState } from 'react';
-import Navbar from './navbar';
-
-
-
-
 
 function NotePage(){
     const [notes, setNotes] = useState([]);
@@ -12,21 +7,25 @@ function NotePage(){
 
 
     const addNote = () => {
-        if (!text.trim()) 
-            return; setNotes([...notes, text]);
+        if (!text.trim()) {
+            return; }
+            setNotes([...notes, text]);
         setText("");
     };
     const removeNote = (index) => {
-        setNotes(notes.filter((_, i) => i !== index));
+        setNotes(notes.filter((_, i) => i != index));
     }
 
     return(
         <>
-        <Navbar/>
+
             <div id='Notepad'> 
                 <h1>Notepad</h1>
-                <input value={text} onChange={(e) => setText(e.target.value)} placeholder='Add a Note'>
-                <button onClick={addNote}>Add</button></input>
+                <input 
+                value={text} 
+                onChange={(e) => setText(e.target.value)} 
+                placeholder='Add a Note'></input>
+                <button onClick={addNote}>Add</button>
                 {notes.length == 0 ? (
                     <p>Your notes are empty, add something</p>
                 ) : (
